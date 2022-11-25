@@ -1,0 +1,4 @@
+{
+  "root": "src",
+  "rules": ["src/index.ts", "src/*/ts/*.ts"]
+}
