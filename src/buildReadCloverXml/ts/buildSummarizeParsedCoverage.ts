@@ -1,8 +1,8 @@
-import { Untrusted } from "../../other/ts/Untrusted";
+import { MeowOutput } from "../../bin/ts/cli";
 import { filterFileByLineType } from "./filterFileByLineType";
-import { ReadCloverXmlInput } from "./readCloverXml";
 import { FileArray, summarizedResult } from "./summarizedResult";
 import { SummaryItem } from "./undefinedOrSummary";
+import { Untrusted } from "./Untrusted";
 
 export type Parsed = Untrusted<{
   readonly coverage: {
@@ -18,7 +18,7 @@ type SummarizeParsedCoverageOutput =
   | ReadonlyArray<SummaryItem | undefined>
   | undefined;
 
-export function buildSummarizeParsedCoverage(input: ReadCloverXmlInput) {
+export function buildSummarizeParsedCoverage(input: MeowOutput) {
   return function summarizeParsedCoverage(
     parsed: Parsed
   ): SummarizeParsedCoverageOutput {

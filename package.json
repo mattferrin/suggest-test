@@ -1,12 +1,12 @@
 {
   "name": "@clowd/suggest-test",
   "version": "1.0.0",
-  "description": "A utility to suggest the next unit test to write",
+  "description": "A clover.xml parser to suggest the next unit test to write",
   "main": "dist/index.js",
   "scripts": {
+    "eslint": "eslint src/**/*.ts",
     "fsl": "node node_modules/@clowd/fsl/dist/index.js",
     "jscpd": "jscpd --threshold=1 --reporters=html ./src",
-    "eslint": "eslint src/**/*.ts",
     "test": "echo \"Error: no test specified\" && exit 1",
     "tsc:w": "tsc -w"
   },
@@ -28,6 +28,15 @@
   },
   "dependencies": {
     "husky": "^8.0.2",
+    "meow": "^9.0.0",
     "xml2js": "^0.4.23"
+  },
+  "files": [
+    "dist/**",
+    "LICENSE",
+    "README.md"
+  ],
+  "bin": {
+    "suggest-test": "dist/bin/ts/cli.js"
   }
 }

@@ -1,24 +1,20 @@
 import fs from "fs/promises";
 import { parseStringPromise } from "xml2js";
-import { buildSummarizeParsedCoverage } from "./summarizeParsedCoverage";
+import { MeowOutput } from "../../bin/ts/cli";
+import { buildSortStatements } from "./buildSortStatements";
+import { buildSummarizeParsedCoverage } from "./buildSummarizeParsedCoverage";
+import { passThroughLogger } from "./passThroughLogger";
 import { SummaryItem, undefinedOrSummary } from "./undefinedOrSummary";
-
-export type ReadCloverXmlInput =
-  | { readonly tag: "existing-balance" }
-  | { readonly tag: "existing-conditionals" }
-  | { readonly tag: "existing-statements" }
-  | { readonly tag: "new-balance" }
-  | { readonly tag: "new-conditionals" }
-  | { readonly tag: "new-statements" };
 
 export type ReadCloverXmlOutput =
   | { readonly tag: "errors"; readonly errors: readonly Error[] }
   | {
       readonly tag: "summary";
-      readonly summary: ReadonlyArray<SummaryItem | undefined>;
+      readonly summaryArray: ReadonlyArray<SummaryItem | undefined>;
+      readonly summaryString: string | { readonly tag: "not-ready" };
     };
 
-export function buildReadCloverXml(input: ReadCloverXmlInput) {
+export function buildReadCloverXml(input: MeowOutput) {
   // eslint-disable-next-line functional/functional-parameters
   return async function readCloverXml(): Promise<ReadCloverXmlOutput> {
     return await fs
@@ -26,8 +22,10 @@ export function buildReadCloverXml(input: ReadCloverXmlInput) {
       .then(parseStringPromise)
       .then(buildSummarizeParsedCoverage(input))
       .then(undefinedOrSummary)
-      .catch((reason) => {
+      .then(buildSortStatements(input))
+      .catch((reason): ReadCloverXmlOutput => {
         return { tag: "errors", errors: [new Error(reason)] };
-      });
+      })
+      .then(passThroughLogger);
   };
 }

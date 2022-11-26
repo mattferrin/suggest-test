@@ -1,4 +1,4 @@
-import { ReadCloverXmlOutput } from "./readCloverXml";
+import { ReadCloverXmlOutput } from "./buildReadCloverXml";
 
 export interface SummaryItem {
   readonly path: string | null | undefined;
@@ -6,6 +6,7 @@ export interface SummaryItem {
   readonly statements: number | null | undefined;
   readonly uncoveredConditionals: number;
   readonly conditionals: number | null | undefined;
+  readonly weightedStatements: number;
 }
 
 export function undefinedOrSummary(
@@ -21,6 +22,10 @@ export function undefinedOrSummary(
       ],
     };
   } else {
-    return { tag: "summary", summary };
+    return {
+      tag: "summary",
+      summaryArray: summary,
+      summaryString: { tag: "not-ready" },
+    };
   }
 }
