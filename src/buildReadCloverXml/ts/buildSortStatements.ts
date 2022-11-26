@@ -11,26 +11,30 @@ export function buildSortStatements(input: MeowOutput) {
         return output;
       case "summary": {
         const summaryArray = output.summaryArray
-          ?.filter((file) => (file?.statements ?? 0) > 1)
-          ?.sort((fileA, fileB) => {
-            if (
-              fileB?.statements === null ||
-              fileB?.statements === undefined ||
-              fileA?.statements === null ||
-              fileA?.statements === undefined
-            ) {
-              return -1;
+          ?.filter((file) => {
+            const isStatementKeeper =
+              (file?.statements ?? 0) > 1 &&
+              (file?.uncoveredStatements ?? 0) > 0;
+            const isConditionalKeeper =
+              (file?.conditionals ?? 0) > 1 &&
+              (file?.uncoveredConditionals ?? 0) > 0;
+
+            if (!input.flags.includeConditionals) {
+              return isStatementKeeper;
+            } else if (!input.flags.includeStatements) {
+              return isConditionalKeeper;
             } else {
-              return fileA.weightedStatements > fileB.weightedStatements
-                ? -1
-                : 1;
+              return isStatementKeeper || isConditionalKeeper;
             }
+          })
+          ?.sort((fileA, fileB) => {
+            return (fileA?.score ?? 0) > (fileB?.score ?? 0) ? -1 : 1;
           });
 
         return {
           tag: "summary",
           summaryArray,
-          summaryString: summarizeIntoString(summaryArray),
+          summaryString: summarizeIntoString(input, summaryArray),
         };
       }
     }

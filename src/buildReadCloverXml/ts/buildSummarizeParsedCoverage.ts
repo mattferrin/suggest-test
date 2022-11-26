@@ -29,7 +29,7 @@ export function buildSummarizeParsedCoverage(input: MeowOutput) {
           projectPackage
         );
 
-        return summarizedResult(filteredProjectPackageFile);
+        return summarizedResult(input, filteredProjectPackageFile);
       });
     });
   };

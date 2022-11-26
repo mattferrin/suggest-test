@@ -1,12 +1,12 @@
 import { ReadCloverXmlOutput } from "./buildReadCloverXml";
 
 export interface SummaryItem {
+  readonly conditionals: number | null | undefined;
   readonly path: string | null | undefined;
-  readonly uncoveredStatements: number;
   readonly statements: number | null | undefined;
   readonly uncoveredConditionals: number;
-  readonly conditionals: number | null | undefined;
-  readonly weightedStatements: number;
+  readonly uncoveredStatements: number;
+  readonly score: number;
 }
 
 export function undefinedOrSummary(

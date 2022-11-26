@@ -7,6 +7,7 @@
     "eslint": "eslint src/**/*.ts",
     "fsl": "node node_modules/@clowd/fsl/dist/index.js",
     "jscpd": "jscpd --threshold=1 --reporters=html ./src",
+    "st": "suggest-test ../folder-structure-lint/coverage/clover.xml --includeTested=false --includeStatements=false",
     "test": "echo \"Error: no test specified\" && exit 1",
     "tsc:w": "tsc -w"
   },

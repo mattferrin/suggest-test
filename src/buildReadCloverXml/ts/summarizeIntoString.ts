@@ -1,19 +1,33 @@
 /* eslint-disable functional/functional-parameters */
 /* eslint-disable @typescript-eslint/restrict-template-expressions */
 
+import { MeowOutput } from "../../bin/ts/cli";
 import { SummaryItem } from "./undefinedOrSummary";
 
 export function summarizeIntoString(
+  input: MeowOutput,
   summaryArray: ReadonlyArray<SummaryItem | undefined>
 ): string {
-  const outputLines = summaryArray.map((y) => {
-    return `${y?.path ?? ""} ${y?.weightedStatements ?? 0}`;
-  });
+  const entity = [
+    ...(input.flags.includeConditionals ? ["conditionals"] : []),
+    ...(input.flags.includeStatements ? ["statements"] : []),
+  ];
 
-  return [
-    "Files suggested to increase statement coverage of:\n",
-    ...outputLines,
-  ]
-    .filter((x) => x !== null)
-    .join("\n");
+  if (summaryArray.length === 0) {
+    return `\nNo uncovered ${entity.join(" or ")} were found.\n`;
+  } else {
+    const outputLines = summaryArray.map((line) => {
+      return `${line?.path ?? ""} ${new Intl.NumberFormat("en-US", {
+        maximumSignificantDigits: 2,
+      }).format(line?.score ?? 0)}`;
+    });
+
+    return [
+      `\nFiles suggested to increase coverage of ${entity.join(" and ")}:\n`,
+      ...outputLines,
+      "",
+    ]
+      .filter((line) => line !== null)
+      .join("\n");
+  }
 }

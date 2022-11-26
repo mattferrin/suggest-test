@@ -6,6 +6,7 @@ import meow from "meow";
 import { buildReadCloverXml } from "../../buildReadCloverXml/ts/buildReadCloverXml";
 
 export interface MeowOutput {
+  readonly input: readonly string[];
   readonly flags: {
     readonly includeNotTested: boolean;
     readonly includeTested: boolean;
@@ -14,7 +15,7 @@ export interface MeowOutput {
   };
 }
 
-const meowOutput: MeowOutput = meow(`help`, {
+const meowOptions = {
   flags: {
     includeNotTested: {
       type: "boolean",
@@ -41,6 +42,30 @@ const meowOutput: MeowOutput = meow(`help`, {
       default: true,
     },
   },
-});
+} as const;
+
+const flagsHelp = Object.entries(meowOptions.flags)
+  .map(([key, value]) => {
+    return `
+  flag      --${key}
+  alias     -${value.alias}
+  type      ${value.type}
+  default   ${String(value.default)}`;
+  })
+  .join("\n");
+
+const help = `
+Example:
+
+  suggest-test coverage/clover.xml --includeTested=false --includeStatements=false
+
+    (uses flags to suggest fully untested files with uncovered conditionals)
+
+
+Flags:
+${flagsHelp}
+`;
+
+const meowOutput: MeowOutput = meow(help, meowOptions);
 
 void buildReadCloverXml(meowOutput)();
