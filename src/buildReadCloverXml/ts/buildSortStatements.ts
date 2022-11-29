@@ -1,4 +1,6 @@
 import { MeowOutput } from "../../bin/ts/cli";
+import { buildIncludeFile } from "./buildIncludeFile";
+import { buildIncludeKind } from "./buildIncludeKind";
 import { ReadCloverXmlOutput } from "./buildReadCloverXml";
 import { summarizeIntoString } from "./summarizeIntoString";
 
@@ -11,25 +13,12 @@ export function buildSortStatements(input: MeowOutput) {
         return output;
       case "summary": {
         const summaryArray = output.summaryArray
-          ?.filter((file) => {
-            const isStatementKeeper =
-              (file?.statements ?? 0) > 1 &&
-              (file?.uncoveredStatements ?? 0) > 0;
-            const isConditionalKeeper =
-              (file?.conditionals ?? 0) > 1 &&
-              (file?.uncoveredConditionals ?? 0) > 0;
-
-            if (!input.flags.includeConditionals) {
-              return isStatementKeeper;
-            } else if (!input.flags.includeStatements) {
-              return isConditionalKeeper;
-            } else {
-              return isStatementKeeper || isConditionalKeeper;
-            }
-          })
+          ?.filter(buildIncludeKind(input))
+          ?.filter(buildIncludeFile(input))
           ?.sort((fileA, fileB) => {
             return (fileA?.score ?? 0) > (fileB?.score ?? 0) ? -1 : 1;
-          });
+          })
+          .slice(0, input.flags.maxItems ?? 32);
 
         return {
           tag: "summary",

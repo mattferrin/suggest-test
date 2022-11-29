@@ -12,6 +12,7 @@ export interface MeowOutput {
     readonly includeTested: boolean;
     readonly includeStatements: boolean;
     readonly includeConditionals: boolean;
+    readonly maxItems: number;
   };
 }
 
@@ -40,6 +41,12 @@ const meowOptions = {
       alias: "c",
       isRequired: false,
       default: true,
+    },
+    maxItems: {
+      type: "number",
+      alias: "m",
+      isRequired: false,
+      default: 32,
     },
   },
 } as const;
