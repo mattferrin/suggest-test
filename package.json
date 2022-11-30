@@ -1,6 +1,6 @@
 {
   "name": "@clowd/suggest-test",
-  "version": "0.0.1-rc.1",
+  "version": "0.0.1-rc.2",
   "description": "A clover.xml parser to suggest the next unit test to write",
   "main": "dist/index.js",
   "scripts": {
