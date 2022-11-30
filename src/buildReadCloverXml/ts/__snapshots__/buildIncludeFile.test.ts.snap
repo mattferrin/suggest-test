@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`5bf05b28-2df7-43a9-944b-72c65acccbb9 1`] = `
+{
+  "returns \`true\` for file because at least 1 statement is tested": {
+    "result": true,
+  },
+}
+`;
+
+exports[`5c9c07a3-5e29-45fe-af63-8780df887809 1`] = `
+{
+  "undefined file doesn't throw an error WHEN includeNotTested false": {
+    "result": false,
+  },
+}
+`;
+
+exports[`8d1e30e7-4f17-4fee-a36c-4da484d0e25e 1`] = `
+{
+  "returns \`true\` for file because at least 1 conditional is tested": {
+    "result": true,
+  },
+}
+`;
+
+exports[`13a1c1c6-dd44-4fc4-8102-da679ba19713 1`] = `
+{
+  "returns \`true\` for file because every line and conditional is not tested": {
+    "result": true,
+  },
+}
+`;
+
+exports[`a036467a-aa43-438a-a54a-220cbb3539fb 1`] = `
+{
+  "undefined file doesn't throw an error WHEN includeNotTested true": {
+    "result": true,
+  },
+}
+`;

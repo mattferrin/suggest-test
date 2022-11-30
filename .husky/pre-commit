@@ -6,3 +6,4 @@ npm run tsc
 npm run jscpd
 npm run pretty:c
 npm run eslint
+npm run jest
