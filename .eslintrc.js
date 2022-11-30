@@ -21,6 +21,7 @@ module.exports = {
     {
       files: ["*.test.ts"],
       rules: {
+        "@typescript-eslint/consistent-type-assertions": "off",
         "@typescript-eslint/no-explicit-any": "off",
         "@typescript-eslint/no-floating-promises": "off",
         "@typescript-eslint/no-unsafe-argument": "off",
@@ -51,27 +52,4 @@ module.exports = {
       { allowReturningBranches: "ifExhaustive" },
     ],
   },
-  overrides: [
-    {
-      files: ["*.test.ts"],
-      rules: {
-        "@typescript-eslint/consistent-type-assertions": "off",
-        "@typescript-eslint/no-empty-function": "off",
-        "@typescript-eslint/no-explicit-any": "off",
-        "@typescript-eslint/no-floating-promises": "off",
-        "@typescript-eslint/no-unsafe-argument": "off",
-        "@typescript-eslint/no-unsafe-call": "off",
-        "@typescript-eslint/no-unsafe-member-access": "off",
-        "@typescript-eslint/no-unsafe-return": "off",
-        "@typescript-eslint/prefer-readonly-parameter-types": "off",
-        "@typescript-eslint/require-await": "off",
-        "functional/functional-parameters": "off",
-        "functional/no-expression-statement": "off",
-        "functional/no-return-void": "off",
-        "functional/no-throw-statement": "off",
-        "functional/prefer-readonly-type": "off",
-        "max-lines-per-function": "off",
-      },
-    },
-  ],
 };

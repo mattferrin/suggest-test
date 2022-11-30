@@ -4,7 +4,7 @@
   "description": "A clover.xml parser to suggest the next unit test to write",
   "main": "dist/index.js",
   "scripts": {
-    "eslint": "eslint src/**/*.ts",
+    "eslint": "eslint src/**/*.ts --max-warnings=0",
     "fsl": "node node_modules/@clowd/fsl/dist/index.js",
     "jest:w": "jest --watch",
     "jest": "jest",
