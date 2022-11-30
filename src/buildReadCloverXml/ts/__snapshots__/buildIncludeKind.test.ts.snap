@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`07e7baf7-9408-4254-af30-a7c724b4b7ad 1`] = `
+{
+  "returns \`false\` to exclude item WHEN 1 conditional that is covered AND statements excluded": {
+    "result": false,
+  },
+}
+`;
+
+exports[`4bf9a8fc-eaa4-412f-a7ac-81fc4d82b3c2 1`] = `
+{
+  "returns \`false\` to exclude item WHEN 0 conditionals AND 0 statements AND all included": {
+    "result": false,
+  },
+}
+`;
+
+exports[`5c8f57e5-9bec-4908-94bb-0e4d5cd19981 1`] = `
+{
+  "returns \`false\` to exclude undefined file item WHEN both includeConditionals AND includeStatements true": {
+    "result": false,
+  },
+}
+`;
+
+exports[`7cf788e5-cee9-44f7-baa0-1af2e17de2ab 1`] = `
+{
+  "returns \`true\` to include item WHEN 1 uncovered statement AND conditionals excluded": {
+    "result": true,
+  },
+}
+`;
+
+exports[`17dc0f2d-3ca0-43c5-87b7-1d2aa236dee9 1`] = `
+{
+  "returns \`true\` to include item WHEN 1 uncovered conditional AND statements excluded": {
+    "result": true,
+  },
+}
+`;
+
+exports[`71b9c9f8-d795-4234-87ca-a2da7ddf7489 1`] = `
+{
+  "returns \`false\` to exclude item WHEN 0 conditionals AND statements excluded": {
+    "result": false,
+  },
+}
+`;
+
+exports[`96dc42c6-bade-45fb-aa2c-57d9baf3367c 1`] = `
+{
+  "returns \`false\` to exclude item WHEN 1 conditional that is covered AND 1 statement that is covered AND all included": {
+    "result": false,
+  },
+}
+`;
+
+exports[`2139f6fd-719c-424d-b4b2-bfbb2053c497 1`] = `
+{
+  "returns \`true\` to include item WHEN 1 uncovered conditional AND all included": {
+    "result": true,
+  },
+}
+`;
+
+exports[`528059d4-1a4b-4cab-af69-c7ab0418506c 1`] = `
+{
+  "returns \`false\` to exclude undefined file item WHEN includeStatements false": {
+    "result": false,
+  },
+}
+`;
+
+exports[`cad6ea7f-4248-433d-989b-0f7c6d403e25 1`] = `
+{
+  "returns \`false\` to exclude item WHEN 0 statements AND conditionals excluded": {
+    "result": false,
+  },
+}
+`;
+
+exports[`cfe960a0-28f2-42d4-ac23-e303109a30b4 1`] = `
+{
+  "returns \`false\` to exclude item WHEN 1 statement that is covered AND conditionals excluded": {
+    "result": false,
+  },
+}
+`;
+
+exports[`e4177bfa-d1a6-4953-a625-144726b42906 1`] = `
+{
+  "returns \`true\` to include item WHEN 1 uncovered statement AND all included": {
+    "result": true,
+  },
+}
+`;
+
+exports[`f2c0498a-c3cc-4a41-80fd-f588e0a99235 1`] = `
+{
+  "returns \`false\` to exclude undefined file item WHEN includeConditionals false": {
+    "result": false,
+  },
+}
+`;
