@@ -7,9 +7,13 @@
     "eslint": "eslint src/**/*.ts",
     "fsl": "node node_modules/@clowd/fsl/dist/index.js",
     "jscpd": "jscpd --threshold=1 --reporters=html ./src",
+    "prepare": "husky install",
+    "pretty:c": "npx prettier --check src",
+    "pretty": "npx prettier --write src",
     "st": "suggest-test ../folder-structure-lint/coverage/clover.xml --includeTested=false --includeStatements=false",
     "test": "echo \"Error: no test specified\" && exit 1",
     "tsc:w": "tsc -w",
+    "tsc": "tsc",
     "version:rc": "npm version prerelease --preid=rc --force"
   },
   "license": "MIT",
@@ -25,11 +29,12 @@
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-n": "^15.5.1",
     "eslint-plugin-promise": "^6.1.1",
+    "husky": "^8.0.2",
     "jscpd": "^3.5.1",
+    "prettier": "2.8.0",
     "typescript": "^4.9.3"
   },
   "dependencies": {
-    "husky": "^8.0.2",
     "meow": "^9.0.0",
     "xml2js": "^0.4.23"
   },
