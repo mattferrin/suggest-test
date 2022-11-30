@@ -15,7 +15,7 @@
     "st": "suggest-test --includeTested=false --includeStatements=false",
     "tsc:w": "tsc -w",
     "tsc": "tsc",
-    "version:rc": "npm version prerelease --preid=rc --force"
+    "version:rc": "npm version prerelease --preid=rc"
   },
   "license": "MIT",
   "devDependencies": {
