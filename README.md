@@ -25,18 +25,18 @@ I recommend passing these flags to focus on conditionals and fully untested file
 ```json
 {
   "scripts": {
-    "st:ts": "suggest-test coverage/clover.xml --includeTested=false --includeStatements=false"
+    "st": "suggest-test coverage/clover.xml --includeTested=false --includeStatements=false"
   }
 }
 ```
 
 ### Execute the script
 
-> `npm run st:ts`
+> `npm run st`
 
 ### Open your favorite coverage viewer
 
-> Perhaps open `report/html/index.html` in your web browser
+> Perhaps open `coverage/lcov-report/index.html` in your web browser
 
 Tip: If you are at liberty to break a suggested file into smaller pieces and re-run the script, the re-run may point you to an even better file to test next.
 

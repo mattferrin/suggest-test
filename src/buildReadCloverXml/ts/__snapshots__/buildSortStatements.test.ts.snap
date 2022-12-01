@@ -1,0 +1,197 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`3b12967f-716b-4913-abfb-ff07fbaf9428 1`] = `
+{
+  "does NOT error when score undefined": {
+    "buildIncludeFileCalls": [
+      [
+        {
+          "flags": {
+            "maxItems": 3,
+          },
+        },
+      ],
+    ],
+    "buildIncludeKindCalls": [
+      [
+        {
+          "flags": {
+            "maxItems": 3,
+          },
+        },
+      ],
+    ],
+    "result": {
+      "summaryArray": [
+        {},
+        {},
+      ],
+      "summaryString": "summarizeIntoString result",
+      "tag": "summary",
+    },
+    "summarizeIntoStringCalls": [
+      [
+        {
+          "flags": {
+            "maxItems": 3,
+          },
+        },
+        [
+          {},
+          {},
+        ],
+      ],
+    ],
+  },
+}
+`;
+
+exports[`3d99af10-0b75-4cb9-a3b0-2358555af621 1`] = `
+{
+  "returns errors result with error item": {
+    "buildIncludeFileCalls": [],
+    "buildIncludeKindCalls": [],
+    "result": {
+      "errors": [
+        [Error: expect this errors item],
+      ],
+      "tag": "errors",
+    },
+    "summarizeIntoStringCalls": [],
+  },
+}
+`;
+
+exports[`41c5f18b-0f55-406e-8e8f-9048a6b442d4 1`] = `
+{
+  "does NOT error when files undefined": {
+    "buildIncludeFileCalls": [
+      [
+        {
+          "flags": {
+            "maxItems": 2,
+          },
+        },
+      ],
+    ],
+    "buildIncludeKindCalls": [
+      [
+        {
+          "flags": {
+            "maxItems": 2,
+          },
+        },
+      ],
+    ],
+    "result": {
+      "summaryArray": [
+        undefined,
+        undefined,
+      ],
+      "summaryString": "summarizeIntoString result",
+      "tag": "summary",
+    },
+    "summarizeIntoStringCalls": [
+      [
+        {
+          "flags": {
+            "maxItems": 2,
+          },
+        },
+        [
+          undefined,
+          undefined,
+        ],
+      ],
+    ],
+  },
+}
+`;
+
+exports[`675ec71a-2b9b-49f8-89d4-44a72839266b 1`] = `
+{
+  "sorts score 2 into top position": {
+    "buildIncludeFileCalls": [
+      [
+        {
+          "flags": {
+            "maxItems": 1,
+          },
+        },
+      ],
+    ],
+    "buildIncludeKindCalls": [
+      [
+        {
+          "flags": {
+            "maxItems": 1,
+          },
+        },
+      ],
+    ],
+    "result": {
+      "summaryArray": [
+        {
+          "score": 2,
+        },
+      ],
+      "summaryString": "summarizeIntoString result",
+      "tag": "summary",
+    },
+    "summarizeIntoStringCalls": [
+      [
+        {
+          "flags": {
+            "maxItems": 1,
+          },
+        },
+        [
+          {
+            "score": 2,
+          },
+        ],
+      ],
+    ],
+  },
+}
+`;
+
+exports[`d117a7b1-b287-4943-906b-2cc8f1369786 1`] = `
+{
+  "forwards empty \`summaryArray\`": {
+    "buildIncludeFileCalls": [
+      [
+        {
+          "flags": {
+            "maxItems": 1,
+          },
+        },
+      ],
+    ],
+    "buildIncludeKindCalls": [
+      [
+        {
+          "flags": {
+            "maxItems": 1,
+          },
+        },
+      ],
+    ],
+    "result": {
+      "summaryArray": [],
+      "summaryString": "summarizeIntoString result",
+      "tag": "summary",
+    },
+    "summarizeIntoStringCalls": [
+      [
+        {
+          "flags": {
+            "maxItems": 1,
+          },
+        },
+        [],
+      ],
+    ],
+  },
+}
+`;

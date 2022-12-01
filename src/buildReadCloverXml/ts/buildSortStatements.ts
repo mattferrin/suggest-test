@@ -13,12 +13,12 @@ export function buildSortStatements(input: MeowOutput) {
         return output;
       case "summary": {
         const summaryArray = output.summaryArray
-          ?.filter(buildIncludeKind(input))
-          ?.filter(buildIncludeFile(input))
-          ?.sort((fileA, fileB) => {
+          .filter(buildIncludeKind(input))
+          .filter(buildIncludeFile(input))
+          .sort((fileA, fileB) => {
             return (fileA?.score ?? 0) > (fileB?.score ?? 0) ? -1 : 1;
           })
-          .slice(0, input.flags.maxItems ?? 32);
+          .slice(0, input.flags.maxItems);
 
         return {
           tag: "summary",

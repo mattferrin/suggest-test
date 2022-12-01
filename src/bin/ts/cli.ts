@@ -46,7 +46,7 @@ const meowOptions = {
       type: "number",
       alias: "m",
       isRequired: false,
-      default: 32,
+      default: 16,
     },
   },
 } as const;
