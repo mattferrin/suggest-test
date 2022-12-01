@@ -27,14 +27,14 @@ export function summarizedResult(
       projectPackageFile?.metrics?.[0]?.$?.statements ?? "0"
     );
     const uncoveredStatements =
-      (statements ?? 0) -
+      statements -
       (projectPackageFile?.metrics?.[0]?.$?.coveredstatements ?? 0);
 
     const conditionals = Number.parseInt(
       projectPackageFile?.metrics?.[0]?.$?.conditionals ?? "0"
     );
     const uncoveredConditionals =
-      (conditionals ?? 0) -
+      conditionals -
       (projectPackageFile?.metrics?.[0]?.$?.coveredconditionals ?? 0);
 
     return {
