@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`41fdcfa1-e922-4d60-8d20-67395195c7e6 1`] = `
+{
+  "shows 1 line": {
+    "result": "
+Files suggested to increase coverage of conditionals and statements:
+
+actual/path 99
+",
+  },
+}
+`;
+
+exports[`41fdcfa1-e922-4d60-8d20-67395195c7e6 2`] = `
+{
+  "shows 2 lines": {
+    "result": "
+Files suggested to increase coverage of conditionals and statements:
+
+actual/path 99
+actual/path/1 1,000
+",
+  },
+}
+`;
+
+exports[`51f963fb-6201-47b5-b164-d0b8dfb9b612 1`] = `
+{
+  "show no conditionals": {
+    "result": "
+No uncovered conditionals were found.
+",
+  },
+}
+`;
+
+exports[`63ae7c30-ed68-4726-b3a6-20deb68b73bd 1`] = `
+{
+  "show please let 1 include be true": {
+    "result": "
+Both includeConditionals and includeStatements are false. Please let at least 1 be true.
+",
+  },
+}
+`;
+
+exports[`279dd56b-7501-46e8-a08d-a7588ac37114 1`] = `
+{
+  "missing path or score don't error": {
+    "result": "
+Files suggested to increase coverage of conditionals and statements:
+
+MISSING/PATH 0
+",
+  },
+}
+`;
+
+exports[`4337e511-5d22-4675-8ef1-adf84cc74172 1`] = `
+{
+  "show no statements": {
+    "result": "
+No uncovered statements were found.
+",
+  },
+}
+`;
+
+exports[`f91efabb-ab0a-4a8a-acf2-0829970bb814 1`] = `
+{
+  "show no conditionals or statements": {
+    "result": "
+No uncovered conditionals or statements were found.
+",
+  },
+}
+`;
