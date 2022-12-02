@@ -14,7 +14,7 @@ export function weightScore(
       ? 0
       : Math.pow(uncoveredConditionals, 1.3) / conditionals;
 
-  const weightedBalance = weightedStatements + conditionals;
+  const weightedBalance = weightedStatements + weightedConditionals;
 
   if (!input.flags.includeConditionals) {
     return weightedStatements;
