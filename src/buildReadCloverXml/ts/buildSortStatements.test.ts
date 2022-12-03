@@ -9,8 +9,8 @@ import { SummaryItem } from "./undefinedOrSummary";
 function snap(input: {
   stabileSortId: string;
   comment: string | null;
-  input: MeowOutput;
-  output: ReadCloverXmlOutput;
+  input: Parameters<typeof buildSortStatements>[0];
+  output: Parameters<ReturnType<typeof buildSortStatements>>[0];
 }): void {
   it(input.stabileSortId, () => {
     /** setup mocks */

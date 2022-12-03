@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`4e1c9e6f-a5ef-48c7-abcd-040d76113c79 1`] = `
+{
+  "clover file has undefined or null": {
+    "result": {
+      "errors": [
+        [Error: The parsed clover.xml has an undefined or null property somewhere],
+      ],
+      "tag": "errors",
+    },
+  },
+}
+`;
+
+exports[`86a79ca4-df17-45fb-8d9f-cba3802eb3b8 1`] = `
+{
+  "summary array defined AND summary string not computed yet": {
+    "result": {
+      "summaryArray": "summary arg",
+      "summaryString": {
+        "tag": "not-ready",
+      },
+      "tag": "summary",
+    },
+  },
+}
+`;

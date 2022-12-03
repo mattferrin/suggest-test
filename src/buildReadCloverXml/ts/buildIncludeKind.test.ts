@@ -5,8 +5,8 @@ import { SummaryItem } from "./undefinedOrSummary";
 function snap(input: {
   stabileSortId: string;
   comment: string | null;
-  input: MeowOutput;
-  file: SummaryItem | undefined;
+  input: Parameters<typeof buildIncludeKind>[0];
+  file: Parameters<ReturnType<typeof buildIncludeKind>>[0];
 }): void {
   it(input.stabileSortId, () => {
     /** setup mocks */

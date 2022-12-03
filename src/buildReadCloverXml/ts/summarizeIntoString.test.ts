@@ -5,8 +5,8 @@ import { SummaryItem } from "./undefinedOrSummary";
 function snap(input: {
   stabileSortId: string;
   comment: string | null;
-  input: MeowOutput;
-  summaryArray: ReadonlyArray<SummaryItem | undefined>;
+  input: Parameters<typeof summarizeIntoString>[0];
+  summaryArray: Parameters<typeof summarizeIntoString>[1];
 }): void {
   it(input.stabileSortId, () => {
     /** setup mocks */
@@ -75,7 +75,7 @@ snap({
   summaryArray: [{ path: "actual/path", score: 99 } as SummaryItem],
 });
 snap({
-  stabileSortId: "41fdcfa1-e922-4d60-8d20-67395195c7e6",
+  stabileSortId: "a1085016-f322-4a2d-a3c5-41fc3cfc0fa5",
   comment: "shows 2 lines",
   input: {
     flags: { includeConditionals: true, includeStatements: true },

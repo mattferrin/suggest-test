@@ -1,4 +1,3 @@
-import { MeowOutput } from "../../bin/ts/cli";
 import { FileArray, summarizedResult } from "./summarizedResult";
 import { Untrusted } from "./Untrusted";
 import * as weightScore from "./weightScore";
@@ -6,8 +5,8 @@ import * as weightScore from "./weightScore";
 function snap(input: {
   stabileSortId: string;
   comment: string | null;
-  input: MeowOutput;
-  filteredProjectPackageFile: Untrusted<FileArray>;
+  input: Parameters<typeof summarizedResult>[0];
+  filteredProjectPackageFile: Parameters<typeof summarizedResult>[1];
 }): void {
   it(input.stabileSortId, () => {
     /** setup mocks */

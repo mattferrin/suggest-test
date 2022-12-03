@@ -4,11 +4,11 @@ import { weightScore } from "./weightScore";
 function snap(input: {
   stabileSortId: string;
   comment: string | null;
-  input: MeowOutput;
-  statements: number;
-  uncoveredStatements: number;
-  conditionals: number;
-  uncoveredConditionals: number;
+  input: Parameters<typeof weightScore>[0];
+  statements: Parameters<typeof weightScore>[1];
+  uncoveredStatements: Parameters<typeof weightScore>[2];
+  conditionals: Parameters<typeof weightScore>[3];
+  uncoveredConditionals: Parameters<typeof weightScore>[4];
 }): void {
   it(input.stabileSortId, () => {
     /** setup mocks */

@@ -12,19 +12,6 @@ actual/path 99
 }
 `;
 
-exports[`41fdcfa1-e922-4d60-8d20-67395195c7e6 2`] = `
-{
-  "shows 2 lines": {
-    "result": "
-Files suggested to increase coverage of conditionals and statements:
-
-actual/path 99
-actual/path/1 1,000
-",
-  },
-}
-`;
-
 exports[`51f963fb-6201-47b5-b164-d0b8dfb9b612 1`] = `
 {
   "show no conditionals": {
@@ -62,6 +49,19 @@ exports[`4337e511-5d22-4675-8ef1-adf84cc74172 1`] = `
   "show no statements": {
     "result": "
 No uncovered statements were found.
+",
+  },
+}
+`;
+
+exports[`a1085016-f322-4a2d-a3c5-41fc3cfc0fa5 1`] = `
+{
+  "shows 2 lines": {
+    "result": "
+Files suggested to increase coverage of conditionals and statements:
+
+actual/path 99
+actual/path/1 1,000
 ",
   },
 }
