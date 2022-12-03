@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`88d0259d-4eb5-4296-bd56-ccf7de479f59 1`] = `
+{
+  "displays errors in console AND passes summary result through": {
+    "errorCalls": [
+      [
+        [Error: expect this as console error],
+      ],
+    ],
+    "logCalls": [],
+    "result": {
+      "errors": [
+        [Error: expect this as console error],
+      ],
+      "tag": "errors",
+    },
+  },
+}
+`;
+
+exports[`34693bef-26e9-403d-b4f6-038ebb5a02c4 1`] = `
+{
+  "displays summary in console AND passes summary result through": {
+    "errorCalls": [],
+    "logCalls": [
+      [
+        "expect this summary console log",
+      ],
+    ],
+    "result": {
+      "summaryString": "expect this summary console log",
+      "tag": "summary",
+    },
+  },
+}
+`;
