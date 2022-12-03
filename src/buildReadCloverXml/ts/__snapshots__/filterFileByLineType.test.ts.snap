@@ -1,0 +1,155 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`01b5eabe-78e0-4dec-8b60-915f5c5fbef6 1`] = `
+{
+  "\`[]\` result WHEN item line item null AND statements included": {
+    "result": [],
+  },
+}
+`;
+
+exports[`044bbd18-d569-4d8f-98af-312f20fe84dd 1`] = `
+{
+  "\`undefined\` result because null projectPackage file WHEN statements excluded": {
+    "result": undefined,
+  },
+}
+`;
+
+exports[`0b619f9c-cccf-4d54-a6ac-00d0f92d8d13 1`] = `
+{
+  "\`[]\` result because file empty AND statements excluded": {
+    "result": [],
+  },
+}
+`;
+
+exports[`2cd2e1e1-00e4-4ec8-a255-73aa1c778846 1`] = `
+{
+  "\`undefined\` result because null projectPackage WHEN statements excluded": {
+    "result": undefined,
+  },
+}
+`;
+
+exports[`2e2f7fc5-15ed-438e-abe6-2acfcff9815d 1`] = `
+{
+  "\`[]\` result WHEN item line item $ type IS NOT cond AND statements included": {
+    "result": [],
+  },
+}
+`;
+
+exports[`6cc23ee9-8cb5-4bbe-ad01-6153a2fbe6be 1`] = `
+{
+  "\`[]\` result WHEN item undefined AND statements included": {
+    "result": [],
+  },
+}
+`;
+
+exports[`9d1c1d27-94a7-4b79-9108-93af2e34d88f 1`] = `
+{
+  "\`[]\` result WHEN item null AND statements included": {
+    "result": [],
+  },
+}
+`;
+
+exports[`4598d4d8-11f4-464e-a0c4-f2277d2b6318 1`] = `
+{
+  "\`projectPackage arg file prop\` result because file defined WHEN statements included": {
+    "result": "projectPackage arg file prop",
+  },
+}
+`;
+
+exports[`7485ae3a-2133-470f-bb52-afd80b6167d0 1`] = `
+{
+  "\`undefined\` result because undefined projectPackage WHEN statements excluded": {
+    "result": undefined,
+  },
+}
+`;
+
+exports[`97775dd4-7c63-45e2-904d-f1988ee098c7 1`] = `
+{
+  "\`undefined\` result because undefined projectPackage file WHEN statements excluded": {
+    "result": undefined,
+  },
+}
+`;
+
+exports[`4162262a-50c4-4f2a-a25a-30ac9880c4c2 1`] = `
+{
+  "\`undefined\` result because null projectPackage has no file WHEN statements included": {
+    "result": undefined,
+  },
+}
+`;
+
+exports[`7951520c-b8d6-4015-892b-73186c449e1c 1`] = `
+{
+  "\`[]\` result WHEN item line null AND statements included": {
+    "result": [],
+  },
+}
+`;
+
+exports[`c700bcf2-e1ff-461d-ae79-e404515dcfc6 1`] = `
+{
+  "\`[]\` result WHEN item line item $ null AND statements included": {
+    "result": [],
+  },
+}
+`;
+
+exports[`cd44ae3c-07f7-4a18-a1d2-3bbec8c78fa7 1`] = `
+{
+  "\`[]\` result WHEN item line item $ undefined AND statements included": {
+    "result": [],
+  },
+}
+`;
+
+exports[`d7c4b5f0-d1ae-4443-986c-83d7dcaf82ee 1`] = `
+{
+  "\`[]\` result WHEN item line item undefined AND statements included": {
+    "result": [],
+  },
+}
+`;
+
+exports[`e16ee10b-f2fe-4ca2-b968-0f093a669cd9 1`] = `
+{
+  "result includes conditionals WHEN item line item $ type IS cond AND statements included": {
+    "result": [
+      {
+        "line": [
+          {
+            "$": {
+              "type": "cond",
+            },
+          },
+        ],
+      },
+    ],
+  },
+}
+`;
+
+exports[`e2152348-6515-4ebb-b1f9-f7aec06b58f9 1`] = `
+{
+  "\`[]\` result WHEN item line undefined AND statements included": {
+    "result": [],
+  },
+}
+`;
+
+exports[`fa22c1bd-307c-4ab7-a396-c312ed3cd567 1`] = `
+{
+  "\`undefined\` result because undefined projectPackage has no file WHEN statements included": {
+    "result": undefined,
+  },
+}
+`;
