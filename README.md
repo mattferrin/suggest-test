@@ -43,3 +43,7 @@ Tip: If you are at liberty to break a suggested file into smaller pieces and re-
 ### Write a test
 
 > TODO: Link to opinionated unit test example.
+
+### Security Concerns
+
+[SECURITY.md](docs/SECURITY.md)
