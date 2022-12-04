@@ -28,4 +28,4 @@ Define a snapshot test. Please reference existing `snap` function definitions an
 
 ### Other Coverage
 
-It is permitted to lower Jest config global coverage functions, lines, or statements threshold percentage as long as branches are 100 percent covered.
+It is permitted to lower Jest config global coverage functions, lines, or statements threshold percentage as long as **branches** are 100 percent covered.

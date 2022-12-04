@@ -44,10 +44,18 @@ Tip: If you are at liberty to break a suggested file into smaller pieces and re-
 
 > TODO: Link to opinionated unit test example.
 
-## Contributing
+## Community Standards
 
-[CONTRIBUTING.md](docs/CONTRIBUTING.md)
+### [Code of Conduct](docs/CODE_OF_CONDUCT.md)
 
-## Security Concerns
+### [Contributing](docs/CONTRIBUTING.md)
 
-[SECURITY.md](docs/SECURITY.md)
+### [License](LICENSE)
+
+### [Security Policy](docs/SECURITY.md)
+
+### [Bug Reports](.github\ISSUE_TEMPLATE\bug_report.md)
+
+### [Feature Requests](.github\ISSUE_TEMPLATE\feature_request.md)
+
+### [Pull Requests](.github\pull_request_template.md)
