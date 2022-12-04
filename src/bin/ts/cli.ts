@@ -8,6 +8,7 @@ import { buildReadCloverXml } from "../../buildReadCloverXml/ts/buildReadCloverX
 export interface MeowOutput {
   readonly input: readonly string[];
   readonly flags: {
+    readonly cloverPath: string;
     readonly includeNotTested: boolean;
     readonly includeTested: boolean;
     readonly includeStatements: boolean;
@@ -18,6 +19,12 @@ export interface MeowOutput {
 
 const meowOptions = {
   flags: {
+    cloverPath: {
+      type: "string",
+      alias: "cp",
+      isRequired: false,
+      default: "coverage/clover.xml",
+    },
     includeNotTested: {
       type: "boolean",
       alias: "nt",

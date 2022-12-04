@@ -1,0 +1,151 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`b67e77c1-a87e-4a20-8745-2750f57d61a5 1`] = `
+{
+  "throws error on first call AND logs it": {
+    "buildSortStatementsCalls": [
+      [
+        {
+          "flags": {
+            "cloverPath": "input flags cloverPath",
+          },
+        },
+      ],
+    ],
+    "buildSummarizeParsedCoverageCalls": [
+      [
+        {
+          "flags": {
+            "cloverPath": "input flags cloverPath",
+          },
+        },
+      ],
+    ],
+    "parseStringPromiseCalls": [],
+    "passThroughLoggerCalls": [
+      [
+        {
+          "errors": [
+            [Error: readFileResult error],
+          ],
+          "tag": "errors",
+        },
+      ],
+    ],
+    "readFileCalls": [
+      [
+        "input flags cloverPath",
+      ],
+    ],
+    "result": {
+      "errors": [
+        [Error: readFileResult error],
+      ],
+      "tag": "errors",
+    },
+    "undefinedOrSummaryCalls": [],
+  },
+}
+`;
+
+exports[`d4863a04-0517-4a79-97f5-b8f79bbedb7e 1`] = `
+{
+  "throws error just before catch AND logs it": {
+    "buildSortStatementsCalls": [
+      [
+        {
+          "flags": {
+            "cloverPath": "input flags cloverPath",
+          },
+        },
+      ],
+    ],
+    "buildSummarizeParsedCoverageCalls": [
+      [
+        {
+          "flags": {
+            "cloverPath": "input flags cloverPath",
+          },
+        },
+      ],
+    ],
+    "parseStringPromiseCalls": [
+      [
+        "readFile result",
+      ],
+    ],
+    "passThroughLoggerCalls": [
+      [
+        {
+          "errors": [
+            [Error: buildSortStatements error],
+          ],
+          "tag": "errors",
+        },
+      ],
+    ],
+    "readFileCalls": [
+      [
+        "input flags cloverPath",
+      ],
+    ],
+    "result": {
+      "errors": [
+        [Error: buildSortStatements error],
+      ],
+      "tag": "errors",
+    },
+    "undefinedOrSummaryCalls": [
+      [
+        "buildSummarizeParsedCoverage result",
+      ],
+    ],
+  },
+}
+`;
+
+exports[`dacaa33f-3d63-432b-81a2-9928a564de69 1`] = `
+{
+  "NO errors AND calls into every step": {
+    "buildSortStatementsCalls": [
+      [
+        {
+          "flags": {
+            "cloverPath": "input flags cloverPath",
+          },
+        },
+      ],
+    ],
+    "buildSummarizeParsedCoverageCalls": [
+      [
+        {
+          "flags": {
+            "cloverPath": "input flags cloverPath",
+          },
+        },
+      ],
+    ],
+    "parseStringPromiseCalls": [
+      [
+        "readFile result",
+      ],
+    ],
+    "passThroughLoggerCalls": [
+      [
+        "buildSortStatements result",
+      ],
+    ],
+    "readFileCalls": [
+      [
+        "input flags cloverPath",
+      ],
+    ],
+    "result": "buildSortStatements result",
+    "undefinedOrSummaryCalls": [
+      [
+        "buildSummarizeParsedCoverage result",
+      ],
+    ],
+  },
+}
+`;

@@ -18,7 +18,7 @@ export function buildReadCloverXml(input: MeowOutput) {
   // eslint-disable-next-line functional/functional-parameters
   return async function readCloverXml(): Promise<ReadCloverXmlOutput> {
     return await fs
-      .readFile(input.input[0] ?? "coverage/clover.xml")
+      .readFile(input.flags.cloverPath)
       .then(parseStringPromise)
       .then(buildSummarizeParsedCoverage(input))
       .then(undefinedOrSummary)
