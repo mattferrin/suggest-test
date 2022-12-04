@@ -44,6 +44,10 @@ Tip: If you are at liberty to break a suggested file into smaller pieces and re-
 
 > TODO: Link to opinionated unit test example.
 
-### Security Concerns
+## Contributing
+
+[CONTRIBUTING.md](docs/CONTRIBUTING.md)
+
+## Security Concerns
 
 [SECURITY.md](docs/SECURITY.md)
