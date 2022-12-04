@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`06c24ded-fd1e-44e7-aca5-323622f883ca 1`] = `
+{
+  "\`false\` WHEN NO line data AND conditionals included AND undefined metrics": {
+    "result": false,
+  },
+}
+`;
+
+exports[`7fcd5863-dde8-4427-a2d7-c21195086170 1`] = `
+{
+  "\`false\` WHEN NO line data AND conditionals included AND undefined metrics item": {
+    "result": false,
+  },
+}
+`;
+
+exports[`424ba948-963c-46d0-b32b-07ade51c9f31 1`] = `
+{
+  "\`false\` WHEN conditional exists AND NO line data AND conditionals excuded": {
+    "result": false,
+  },
+}
+`;
+
+exports[`aff17e98-44c1-456f-b06e-e78f221a13d9 1`] = `
+{
+  "\`false\` WHEN NO line data AND conditionals included AND null metrics": {
+    "result": false,
+  },
+}
+`;
+
+exports[`b2f223ca-cd12-4ce6-b5cb-dc0c62642a17 1`] = `
+{
+  "\`false\` WHEN conditional line data exists AND conditionals included": {
+    "result": false,
+  },
+}
+`;
+
+exports[`ca766aa2-a8c8-4b12-9700-b1b771ae11c7 1`] = `
+{
+  "\`false\` WHEN null input": {
+    "result": false,
+  },
+}
+`;
+
+exports[`e5a1d9b8-4a9d-4776-98e8-6c11ee37095c 1`] = `
+{
+  "\`false\` WHEN undefined input": {
+    "result": false,
+  },
+}
+`;
+
+exports[`e18a4ddd-68e4-4bb2-ba82-622bd574d66b 1`] = `
+{
+  "\`false\` WHEN NO line data AND conditionals included AND null metrics item": {
+    "result": false,
+  },
+}
+`;
+
+exports[`e9609fe2-44db-47b5-91d3-27831468a361 1`] = `
+{
+  "\`false\` WHEN NO conditionals": {
+    "result": false,
+  },
+}
+`;
+
+exports[`f823b49a-cfdd-40c9-8dac-5f7a9975d0c6 1`] = `
+{
+  "\`true\` WHEN conditional exists AND NO line data AND conditionals included": {
+    "result": true,
+  },
+}
+`;
+
+exports[`f823b49a-cfdd-40c9-8dac-5f7a9975d0c6 2`] = `
+{
+  "result \`false\` WHEN line undefined": {
+    "result": false,
+  },
+}
+`;
+
+exports[`f823b49a-cfdd-40c9-8dac-5f7a9975d0c6 3`] = `
+{
+  "result \`false\` WHEN line null": {
+    "result": false,
+  },
+}
+`;

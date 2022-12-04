@@ -1,4 +1,5 @@
 import { MeowOutput } from "../../bin/ts/cli";
+import { hasUnmarkedConditional } from "./hasUnmarkedConditional";
 import { SummaryItem } from "./undefinedOrSummary";
 import { Untrusted } from "./Untrusted";
 import { weightScore } from "./weightScore";
@@ -50,6 +51,7 @@ export function summarizedResult(
       statements,
       uncoveredConditionals,
       uncoveredStatements,
+      hasUnmarkedConditional: hasUnmarkedConditional(input, projectPackageFile),
     };
   });
 }

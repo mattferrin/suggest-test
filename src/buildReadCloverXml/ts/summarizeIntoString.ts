@@ -20,12 +20,16 @@ export function summarizeIntoString(
       return `\nNo uncovered ${entity.join(" or ")} were found.\n`;
     } else {
       const outputLines = summaryArray.map((line) => {
-        return `${line?.path ?? "MISSING/PATH"} ${new Intl.NumberFormat(
-          "en-US",
-          {
-            maximumSignificantDigits: 2,
-          }
-        ).format(line?.score ?? 0)}`;
+        const unmarkedConditional =
+          line?.hasUnmarkedConditional === true
+            ? ["(unmarked conditional, possibly a throw)"]
+            : [];
+        const score = new Intl.NumberFormat("en-US", {
+          maximumSignificantDigits: 2,
+        }).format(line?.score ?? 0);
+        const path = line?.path ?? "MISSING/PATH";
+
+        return [path, score, ...unmarkedConditional].join(" ");
       });
 
       return [

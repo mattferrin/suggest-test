@@ -12,6 +12,18 @@ actual/path 99
 }
 `;
 
+exports[`41fdcfa1-e922-4d60-8d20-67395195c7e6 2`] = `
+{
+  "informs of unmarked conditional": {
+    "result": "
+Files suggested to increase coverage of conditionals and statements:
+
+actual/path 99 (unmarked conditional, possibly a throw)
+",
+  },
+}
+`;
+
 exports[`51f963fb-6201-47b5-b164-d0b8dfb9b612 1`] = `
 {
   "show no conditionals": {

@@ -1,3 +1,4 @@
+import * as hasUnmarkedConditional from "./hasUnmarkedConditional";
 import { FileArray, summarizedResult } from "./summarizedResult";
 import { Untrusted } from "./Untrusted";
 import * as weightScore from "./weightScore";
@@ -13,6 +14,9 @@ function snap(input: {
     const weightScoreSpy = jest
       .spyOn(weightScore, "weightScore")
       .mockImplementation(() => "weightScore result" as any);
+    const hasUnmarkedLineSpy = jest
+      .spyOn(hasUnmarkedConditional, "hasUnmarkedConditional")
+      .mockImplementation(() => "hasUnmarkedConditional result" as any);
 
     /** unit under test */
     const result = summarizedResult(
@@ -25,6 +29,7 @@ function snap(input: {
       [`${input.comment ?? "TODO: comment"}`]: {
         result,
         weightScoreCalls: weightScoreSpy.mock.calls,
+        hasUnmarkedLineCalls: hasUnmarkedLineSpy.mock.calls,
       },
     }).toMatchSnapshot();
   });

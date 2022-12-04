@@ -1,5 +1,4 @@
 import { MeowOutput } from "../../bin/ts/cli";
-import { filterFileByLineType } from "./filterFileByLineType";
 import { FileArray, summarizedResult } from "./summarizedResult";
 import { SummaryItem } from "./undefinedOrSummary";
 import { Untrusted } from "./Untrusted";
@@ -24,12 +23,7 @@ export function buildSummarizeParsedCoverage(input: MeowOutput) {
   ): SummarizeParsedCoverageOutput {
     return parsed?.coverage?.project?.flatMap((project) => {
       return project?.package?.flatMap((projectPackage) => {
-        const filteredProjectPackageFile = filterFileByLineType(
-          input,
-          projectPackage
-        );
-
-        return summarizedResult(input, filteredProjectPackageFile);
+        return summarizedResult(input, projectPackage?.file);
       });
     });
   };

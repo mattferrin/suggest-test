@@ -85,3 +85,18 @@ snap({
     { path: "actual/path/1", score: 999 },
   ] as SummaryItem[],
 });
+
+snap({
+  stabileSortId: "41fdcfa1-e922-4d60-8d20-67395195c7e6",
+  comment: "informs of unmarked conditional",
+  input: {
+    flags: { includeConditionals: true, includeStatements: true },
+  } as MeowOutput,
+  summaryArray: [
+    {
+      path: "actual/path",
+      score: 99,
+      hasUnmarkedConditional: true,
+    } as SummaryItem,
+  ],
+});

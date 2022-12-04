@@ -3,9 +3,18 @@
 exports[`00b89c24-10ea-4a90-8fed-84f225a31e28 1`] = `
 {
   "null item metrics doesn't break things": {
+    "hasUnmarkedLineCalls": [
+      [
+        "expect as 1st arg to weightScore",
+        {
+          "metrics": null,
+        },
+      ],
+    ],
     "result": [
       {
         "conditionals": 0,
+        "hasUnmarkedConditional": "hasUnmarkedConditional result",
         "path": undefined,
         "score": "weightScore result",
         "statements": 0,
@@ -29,9 +38,27 @@ exports[`00b89c24-10ea-4a90-8fed-84f225a31e28 1`] = `
 exports[`0f20adf1-e300-4055-a718-d44c2915d302 1`] = `
 {
   "defined item metrics item $ propterties translate properly": {
+    "hasUnmarkedLineCalls": [
+      [
+        "expect as 1st arg to weightScore",
+        {
+          "metrics": [
+            {
+              "$": {
+                "conditionals": "6",
+                "coveredconditionals": 3,
+                "coveredstatements": 1,
+                "statements": "2",
+              },
+            },
+          ],
+        },
+      ],
+    ],
     "result": [
       {
         "conditionals": 6,
+        "hasUnmarkedConditional": "hasUnmarkedConditional result",
         "path": undefined,
         "score": "weightScore result",
         "statements": 2,
@@ -55,9 +82,16 @@ exports[`0f20adf1-e300-4055-a718-d44c2915d302 1`] = `
 exports[`1ab54fed-8e14-434d-9d2d-0d3d96a74c66 1`] = `
 {
   "undefined item doesn't break things": {
+    "hasUnmarkedLineCalls": [
+      [
+        "expect as 1st arg to weightScore",
+        undefined,
+      ],
+    ],
     "result": [
       {
         "conditionals": 0,
+        "hasUnmarkedConditional": "hasUnmarkedConditional result",
         "path": undefined,
         "score": "weightScore result",
         "statements": 0,
@@ -81,9 +115,18 @@ exports[`1ab54fed-8e14-434d-9d2d-0d3d96a74c66 1`] = `
 exports[`4ec6aa85-35a7-4947-a21b-83a1f8fe0d2d 1`] = `
 {
   "null item $ doesn't break things": {
+    "hasUnmarkedLineCalls": [
+      [
+        "expect as 1st arg to weightScore",
+        {
+          "$": null,
+        },
+      ],
+    ],
     "result": [
       {
         "conditionals": 0,
+        "hasUnmarkedConditional": "hasUnmarkedConditional result",
         "path": undefined,
         "score": "weightScore result",
         "statements": 0,
@@ -107,9 +150,20 @@ exports[`4ec6aa85-35a7-4947-a21b-83a1f8fe0d2d 1`] = `
 exports[`5a4fbb77-3ea5-4bef-8def-f2c920ab2741 1`] = `
 {
   "undefined item metrics item doesn't break things": {
+    "hasUnmarkedLineCalls": [
+      [
+        "expect as 1st arg to weightScore",
+        {
+          "metrics": [
+            undefined,
+          ],
+        },
+      ],
+    ],
     "result": [
       {
         "conditionals": 0,
+        "hasUnmarkedConditional": "hasUnmarkedConditional result",
         "path": undefined,
         "score": "weightScore result",
         "statements": 0,
@@ -133,9 +187,22 @@ exports[`5a4fbb77-3ea5-4bef-8def-f2c920ab2741 1`] = `
 exports[`5cbcf1dc-6f60-40b3-8d1c-53c27f36c0e4 1`] = `
 {
   "null item metrics item $ doesn't break things": {
+    "hasUnmarkedLineCalls": [
+      [
+        "expect as 1st arg to weightScore",
+        {
+          "metrics": [
+            {
+              "$": null,
+            },
+          ],
+        },
+      ],
+    ],
     "result": [
       {
         "conditionals": 0,
+        "hasUnmarkedConditional": "hasUnmarkedConditional result",
         "path": undefined,
         "score": "weightScore result",
         "statements": 0,
@@ -159,9 +226,22 @@ exports[`5cbcf1dc-6f60-40b3-8d1c-53c27f36c0e4 1`] = `
 exports[`6eac347e-8284-4d08-81a9-0bb4dcf6530c 1`] = `
 {
   "undefined item metrics item $ propterties don't break things": {
+    "hasUnmarkedLineCalls": [
+      [
+        "expect as 1st arg to weightScore",
+        {
+          "metrics": [
+            {
+              "$": {},
+            },
+          ],
+        },
+      ],
+    ],
     "result": [
       {
         "conditionals": 0,
+        "hasUnmarkedConditional": "hasUnmarkedConditional result",
         "path": undefined,
         "score": "weightScore result",
         "statements": 0,
@@ -185,6 +265,7 @@ exports[`6eac347e-8284-4d08-81a9-0bb4dcf6530c 1`] = `
 exports[`7c65727c-f676-4f54-9ab7-60bdf07b5dc1 1`] = `
 {
   "\`undefined\` result from undefined array": {
+    "hasUnmarkedLineCalls": [],
     "result": undefined,
     "weightScoreCalls": [],
   },
@@ -194,9 +275,18 @@ exports[`7c65727c-f676-4f54-9ab7-60bdf07b5dc1 1`] = `
 exports[`7e2816e1-da30-4bd2-a46f-1627baacf368 1`] = `
 {
   "undefined item $ doesn't break things": {
+    "hasUnmarkedLineCalls": [
+      [
+        "expect as 1st arg to weightScore",
+        {
+          "$": undefined,
+        },
+      ],
+    ],
     "result": [
       {
         "conditionals": 0,
+        "hasUnmarkedConditional": "hasUnmarkedConditional result",
         "path": undefined,
         "score": "weightScore result",
         "statements": 0,
@@ -220,9 +310,20 @@ exports[`7e2816e1-da30-4bd2-a46f-1627baacf368 1`] = `
 exports[`63be1e68-70b0-4ae6-ba76-8565643a2f49 1`] = `
 {
   "null item $ path doesn't break things": {
+    "hasUnmarkedLineCalls": [
+      [
+        "expect as 1st arg to weightScore",
+        {
+          "$": {
+            "path": null,
+          },
+        },
+      ],
+    ],
     "result": [
       {
         "conditionals": 0,
+        "hasUnmarkedConditional": "hasUnmarkedConditional result",
         "path": null,
         "score": "weightScore result",
         "statements": 0,
@@ -246,9 +347,27 @@ exports[`63be1e68-70b0-4ae6-ba76-8565643a2f49 1`] = `
 exports[`403c1ab5-54ff-4a24-8dbf-4fe1e9079161 1`] = `
 {
   "null item metrics item $ propterties don't break things": {
+    "hasUnmarkedLineCalls": [
+      [
+        "expect as 1st arg to weightScore",
+        {
+          "metrics": [
+            {
+              "$": {
+                "conditionals": null,
+                "coveredconditionals": null,
+                "coveredstatements": null,
+                "statements": null,
+              },
+            },
+          ],
+        },
+      ],
+    ],
     "result": [
       {
         "conditionals": 0,
+        "hasUnmarkedConditional": "hasUnmarkedConditional result",
         "path": undefined,
         "score": "weightScore result",
         "statements": 0,
@@ -272,9 +391,20 @@ exports[`403c1ab5-54ff-4a24-8dbf-4fe1e9079161 1`] = `
 exports[`824dc8e2-5db8-45fa-80ff-7145871c8c9c 1`] = `
 {
   "defined item $ path translates": {
+    "hasUnmarkedLineCalls": [
+      [
+        "expect as 1st arg to weightScore",
+        {
+          "$": {
+            "path": "expect as result item path",
+          },
+        },
+      ],
+    ],
     "result": [
       {
         "conditionals": 0,
+        "hasUnmarkedConditional": "hasUnmarkedConditional result",
         "path": "expect as result item path",
         "score": "weightScore result",
         "statements": 0,
@@ -298,9 +428,20 @@ exports[`824dc8e2-5db8-45fa-80ff-7145871c8c9c 1`] = `
 exports[`96868bda-df0c-4aa0-a633-1df4c9999b68 1`] = `
 {
   "null item metrics item doesn't break things": {
+    "hasUnmarkedLineCalls": [
+      [
+        "expect as 1st arg to weightScore",
+        {
+          "metrics": [
+            null,
+          ],
+        },
+      ],
+    ],
     "result": [
       {
         "conditionals": 0,
+        "hasUnmarkedConditional": "hasUnmarkedConditional result",
         "path": undefined,
         "score": "weightScore result",
         "statements": 0,
@@ -324,9 +465,22 @@ exports[`96868bda-df0c-4aa0-a633-1df4c9999b68 1`] = `
 exports[`a8fc47ff-abaa-4690-89be-0a43eeb94905 1`] = `
 {
   "undefined item metrics item $ doesn't break things": {
+    "hasUnmarkedLineCalls": [
+      [
+        "expect as 1st arg to weightScore",
+        {
+          "metrics": [
+            {
+              "$": undefined,
+            },
+          ],
+        },
+      ],
+    ],
     "result": [
       {
         "conditionals": 0,
+        "hasUnmarkedConditional": "hasUnmarkedConditional result",
         "path": undefined,
         "score": "weightScore result",
         "statements": 0,
@@ -350,6 +504,7 @@ exports[`a8fc47ff-abaa-4690-89be-0a43eeb94905 1`] = `
 exports[`b102ad95-daa6-4a7a-b2af-c2f90f31d692 1`] = `
 {
   "\`[]\` result from empty array": {
+    "hasUnmarkedLineCalls": [],
     "result": [],
     "weightScoreCalls": [],
   },
@@ -359,9 +514,16 @@ exports[`b102ad95-daa6-4a7a-b2af-c2f90f31d692 1`] = `
 exports[`b35725b4-bf32-40fc-ad51-0005b6e67233 1`] = `
 {
   "null item doesn't break things": {
+    "hasUnmarkedLineCalls": [
+      [
+        "expect as 1st arg to weightScore",
+        null,
+      ],
+    ],
     "result": [
       {
         "conditionals": 0,
+        "hasUnmarkedConditional": "hasUnmarkedConditional result",
         "path": undefined,
         "score": "weightScore result",
         "statements": 0,
@@ -385,9 +547,18 @@ exports[`b35725b4-bf32-40fc-ad51-0005b6e67233 1`] = `
 exports[`bd595fed-1bcf-4190-b611-903dc9caa324 1`] = `
 {
   "undefined item metrics doesn't break things": {
+    "hasUnmarkedLineCalls": [
+      [
+        "expect as 1st arg to weightScore",
+        {
+          "metrics": undefined,
+        },
+      ],
+    ],
     "result": [
       {
         "conditionals": 0,
+        "hasUnmarkedConditional": "hasUnmarkedConditional result",
         "path": undefined,
         "score": "weightScore result",
         "statements": 0,
@@ -411,6 +582,7 @@ exports[`bd595fed-1bcf-4190-b611-903dc9caa324 1`] = `
 exports[`c5353fde-c0eb-45b0-89f0-4a92ae9375a2 1`] = `
 {
   "\`undefined\` result from null array": {
+    "hasUnmarkedLineCalls": [],
     "result": undefined,
     "weightScoreCalls": [],
   },
@@ -420,9 +592,20 @@ exports[`c5353fde-c0eb-45b0-89f0-4a92ae9375a2 1`] = `
 exports[`ff2101ee-7810-4e56-9d8d-cd511eb5e1ff 1`] = `
 {
   "undefined item $ path doesn't break things": {
+    "hasUnmarkedLineCalls": [
+      [
+        "expect as 1st arg to weightScore",
+        {
+          "$": {
+            "path": undefined,
+          },
+        },
+      ],
+    ],
     "result": [
       {
         "conditionals": 0,
+        "hasUnmarkedConditional": "hasUnmarkedConditional result",
         "path": undefined,
         "score": "weightScore result",
         "statements": 0,

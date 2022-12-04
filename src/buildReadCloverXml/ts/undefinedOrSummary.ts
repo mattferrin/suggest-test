@@ -7,6 +7,7 @@ export interface SummaryItem {
   readonly uncoveredConditionals: number;
   readonly uncoveredStatements: number;
   readonly score: number;
+  readonly hasUnmarkedConditional: boolean;
 }
 
 export function undefinedOrSummary(
