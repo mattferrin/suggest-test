@@ -54,8 +54,8 @@ Tip: If you are at liberty to break a suggested file into smaller pieces and re-
 
 ### [Security Policy](docs/SECURITY.md)
 
-### [Bug Reports](.github\ISSUE_TEMPLATE\bug_report.md)
+### [Bug Reports](.github/ISSUE_TEMPLATE/bug_report.md)
 
-### [Feature Requests](.github\ISSUE_TEMPLATE\feature_request.md)
+### [Feature Requests](.github/ISSUE_TEMPLATE/feature_request.md)
 
-### [Pull Requests](.github\pull_request_template.md)
+### [Pull Requests](.github/pull_request_template.md)
